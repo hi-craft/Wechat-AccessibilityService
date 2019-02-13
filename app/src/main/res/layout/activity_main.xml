@@ -1,0 +1,143 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#78d4f9"
+    android:label="@string/app_name"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="微信群发助手2.2"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="15dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="0dp">
+
+            <LinearLayout
+                android:layout_width="225dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="20dip"
+                android:background="@drawable/radius_drawable_bg"
+                android:orientation="vertical"
+                android:padding="10dip">
+
+                <LinearLayout
+                    android:id="@+id/input_layout_psw"
+                    android:layout_width="225dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/time_input"
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:background="#00000000"
+                        android:digits="0123456789"
+                        android:hint="分钟,下一次循环发送间隔时间"
+                        android:inputType="number"
+                        android:padding="4dip"
+                        android:textSize="13sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Switch
+                android:id="@+id/s_v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:switchMinWidth="20dp"
+                android:textOff="off"
+                android:textOn="on"
+                android:thumb="@drawable/trumb"
+                android:track="@drawable/track" />
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="0dp">
+        <LinearLayout
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dip"
+            android:background="@drawable/radius_drawable_bg"
+            android:orientation="vertical"
+            android:padding="10dip">
+
+            <LinearLayout
+                android:id="@+id/input_layout_psw2"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/time_inpu2"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:background="#00000000"
+                    android:digits="0123456789"
+                    android:hint="秒,每次发送间隔"
+                    android:inputType="number"
+                    android:padding="4dip"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/s_v2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:switchMinWidth="20dp"
+            android:textOff="群"
+            android:textOn="好友"
+            android:thumb="@drawable/trumb"
+            android:track="@drawable/track" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="142dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/buttonradius"
+            android:text="开始群发"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
+

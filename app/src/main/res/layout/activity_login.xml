@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7adfb8"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="88dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:gravity="center"
+            android:text="Auto Control Wechat"
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="By hi_craft"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="275dp">
+
+        <include
+            android:id="@+id/input_layout"
+            layout="@layout/input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="130dip" />
+
+        <include
+            android:id="@+id/layout_progress"
+            layout="@layout/layout_progress"
+            android:layout_width="match_parent"
+            android:layout_height="130dip"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/main_btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_layout"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="-8dp"
+            android:background="@drawable/text_bg"
+            android:gravity="center"
+            android:paddingLeft="15dip"
+            android:paddingTop="2dip"
+            android:paddingRight="15dip"
+            android:paddingBottom="2dip"
+            android:text="Login"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</RelativeLayout>
